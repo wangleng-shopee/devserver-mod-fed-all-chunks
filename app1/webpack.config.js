@@ -33,6 +33,9 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    splitChunks: { chunks: 'all' },
+  },
   //http://localhost:3002/remoteEntry.js
   plugins: [
     new ModuleFederationPlugin({

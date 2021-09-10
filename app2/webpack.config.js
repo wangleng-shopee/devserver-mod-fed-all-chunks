@@ -26,6 +26,9 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    splitChunks: { chunks: 'all' },
+  },
   plugins: [
     new ModuleFederationPlugin({
       name: "app2",
